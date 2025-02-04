@@ -1,0 +1,69 @@
+h1{
+    color: yellow;
+    font-family: "Star Jedi";
+    font-weight: 40;
+    font-size: 50px;
+    margin: 10px 40px;
+}
+
+span{
+    color: yellow;
+    font-weight: bold;
+}
+
+img{
+    width: 180px;
+    border: 1px solid yellow;
+}
+
+#box-button a{
+    background-color: transparent;
+}
+
+.specie{
+    color: white;
+    border: 1px solid yellow;
+    width: 300px;
+    height: 850px;
+    margin: 15px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img,.data{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.data > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.data > div > p {
+    margin: 8px;
+    line-height: 22px;
+}
+
+@media screen and (min-width: 768px){
+    .specie{
+        width: 700px;
+        height: 450px;
+        flex-direction: row;
+    }
+
+    .data{
+        width: 650px;
+        margin: 20px;
+    }
+
+    img{
+        width: 280px;
+    }
+}

@@ -10,34 +10,28 @@ const button = document.getElementById('button')
 
 let cont = 1;
 
-async function getCharacter(id) {
-    let response = await fetch(`https://swapi.dev/api/people/${id}`);
-    let data = await response.json();
-    console.log(data);
-}
-
 function getSpecieImg(id) {
-    const response =`https://starwars-visualguide.com/assets/img/species/${id}.jpg`
+    const response =`https://starwars-visualguide.com/assets/img/species/${id}.jpg`;
     return response
 }
 
 function getVehicleImg(id) {
-    const response =`https://starwars-visualguide.com/assets/img/vehicles/${id}.jpg`
+    const response =`https://starwars-visualguide.com/assets/img/vehicles/${id}.jpg`;
     return response
 }
 
 function getCharacterImg(id) {
-    const response =`https://starwars-visualguide.com/assets/img/characters/${id}.jpg`
+    const response =`https://starwars-visualguide.com/assets/img/characters/${id}.jpg`;
     return response
 }
 
 function getPlanetImg(id) {
-    const response =`https://starwars-visualguide.com/assets/img/planets/${id}.jpg`
+    const response =`https://starwars-visualguide.com/assets/img/planets/${id}.jpg`;
     return response
 }
 
 function getStarshipImg(id) {
-    const response =`https://starwars-visualguide.com/assets/img/starships/${id}.jpg`
+    const response =`https://starwars-visualguide.com/assets/img/starships/${id}.jpg`;
     return response
 }
 
@@ -61,11 +55,20 @@ const showInfo = () => {
     } 
 }
 
-characters.style.backgroundImage = `url(${getCharacterImg(11)})`
-vehicles.style.backgroundImage = `url(${getVehicleImg(18)})`
-species.style.backgroundImage = `url(${getSpecieImg(9)})`
-planets.style.backgroundImage = `url(${getPlanetImg(2)})`
-starships.style.backgroundImage = `url(${getStarshipImg(9)})`
-movies.style.backgroundImage = `url(${getMovieImg(1)})`
+button.addEventListener('click' , showInfo);
+
+starships.style.backgroundImage = `url(${getStarshipImg(9)})`;
+movies.style.backgroundImage = `url(${getMovieImg(1)})`;
+characters.style.backgroundImage = `url(${getCharacterImg(5)})`;
+vehicles.style.backgroundImage = `url(${getVehicleImg(18)})`;
+species.style.backgroundImage = `url(${getSpecieImg(9)})`;
+planets.style.backgroundImage = `url(${getPlanetImg(2)})`;
+
+
+
+
+
+
+
+
   
-button.addEventListener(('click'), showInfo)
