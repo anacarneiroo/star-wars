@@ -17,7 +17,7 @@ async function getMovie(id) {
 
     h2.innerHTML = data.title.toLowerCase()
     p1.id = 'release'
-    p1.innerHTML = `<span>Ano da Lançamento:</span> ${data.release_date} ` 
+    p1.innerHTML = `<span>Year of Release:</span> ${data.release_date} ` 
     p2.innerHTML = data.opening_crawl
     p2.id = 'more'
     p3.innerHTML = `<span>Director:</span> ${data.director}`

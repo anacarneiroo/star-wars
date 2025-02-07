@@ -64,10 +64,10 @@ span{
 }
 
 #button {
-    padding: 20px;
     background-color: transparent;
     text-decoration: none;
     border: none;
+    margin: 15px;
     cursor: pointer;
     color: yellow;
     font-size: 30px;
@@ -78,6 +78,7 @@ span{
 
 #info {
     background-color: rgba(255, 255, 0, 0.392);
+    box-shadow: 0px 0px 4px yellow;
     display: none;
     flex-direction: column;
     margin: auto;
@@ -85,6 +86,7 @@ span{
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
+    border: 1px solid yellow;
     line-height: 25px;
 }
 
@@ -122,6 +124,19 @@ h2{
     font-weight: 40;
     font-size: 30px;
     margin: 5px 15px;
+}
+
+footer{
+    width: 90vw;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+footer > a {
+    color: yellow;
 }
 
 @media screen and (min-width:768px) and (max-width: 1023px) { 
